@@ -4,7 +4,7 @@
 
 Este sistema es un **sistema distribuido** el cual un servidor principal, **api_frontend_service.js**, recibe peticiones por parte de un cliente y lo redirecciona, primero al servidor **aunthentication_service.js** para comprobar que el el usuario está dentro de la base de datos de usuarios (autenticar) y si el usario y la contraseña están correctos, permitirle que realize la petición al servidor **api_backend_service.js** el cual es un simple REST API que se conecta a una base de datos con _mongoose._ 
 
-A continuación se muestarn una serie de comandos utilizando cURL para poder realiziar las peticiones adecuadas (todas fueron probadas con antelación):
+A continuación se muestran una serie de comandos utilizando cURL para poder realiziar las peticiones adecuadas (todas fueron probadas con antelación):
 
 ------------------------------------------------------------------------------------------------------------------------------------------
 ## COMANDOS CURL (Preferiblemente en el orden en que se presentan):
