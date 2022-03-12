@@ -4,6 +4,8 @@
 
 Este sistema es un **sistema distribuido** el cual un servidor principal, **api_frontend_service.js**, recibe peticiones por parte de un cliente y lo redirecciona, primero al servidor **aunthentication_service.js** para comprobar que el el usuario está dentro de la base de datos de usuarios (autenticar) y si el usario y la contraseña están correctos, permitirle que realize la petición al servidor **api_backend_service.js** el cual es un simple REST API que se conecta a una base de datos con _mongoose._ 
 
+En términos generales, se utiliza principalmente el header _Content-Type: application/json_ el cual me permite decirle al servidor que se está enviando una solicitud con un cuerpo que es de formato JSON, de tal manera que cuando llegue la información llegue a la ruta, con la ayuda de _body-parser_, se pueda utilizar con el objeto _req.body_; el otro header que se utiliza es el _"Access-Control-Request-Methods": "-X, OPTIONS"_ donde _-X_ es el método que se está ejecutando, este header implica que estos son los metodos que la petición permite para poder gestionar un control con respecto a los métodos de acceso (relacionado con cors), as'i el servidor permite que estos métodos puedan ser procesados.
+
 A continuación se muestran una serie de comandos utilizando cURL para poder realiziar las peticiones adecuadas (todas fueron probadas con antelación):
 
 ------------------------------------------------------------------------------------------------------------------------------------------
