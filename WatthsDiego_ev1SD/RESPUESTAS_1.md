@@ -37,7 +37,8 @@ En otras palabras, este código es análogo al #1 con la diferencia que la insta
 **RESULTADO:** 'new promise' 'async function' ' nextTick 1' 'nextTick 2' 'nextTick 3' 'then 1' 'then 2' 'microTask 1' 'microTask 2' 'immediate 1' ' immediate 2' 'timeout 1' 'timeout 2' 
 
 **ANÁLISIS:**
-Este código es un fichero ECMAScript, lo cual implica que es necesario exportar el fichero para poder ver la funcionalidad del mismo, entonces como se encuentra, **no mostraría nada dado a que no se exportó**; sin embargo, en el caso donde sí se llega a exportar, mostraría **el mismo contenido que el primer código que se vió**, dado a que al importar el código, este se comporta como un fichero .js convencional, y por ende se obtiene los mismos resultados. 
+Este código es un fichero ECMAScript, lo cual implica que es necesario exportar el fichero para poder ver la funcionalidad del mismo, entonces como se encuentra, **no mostraría nada dado a que no se exportó**; sin embargo, en el caso donde sí se llega a exportar, mostraría **el mismo contenido que el primer código que se vió**, dado a que al importar el código, este se comporta como un fichero .js convencional, y por ende se obtiene los mismos resultados.
+
 #Referencias
 * https://medium.com/dkatalis/eventloop-in-nodejs-macrotasks-and-microtasks-164417e619b9
 * https://dev.to/lunaticmonk/understanding-the-node-js-event-loop-phases-and-how-it-executes-the-javascript-code-1j9
